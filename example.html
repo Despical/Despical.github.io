@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css"
+          href="style.css"/>
+</head>
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<center> <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:42px">Sa beyler seçime kalan süre: <span id='date-time'></span> </h1> </center> </p>
+<center> <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:42px">Siteyi güncellemeye çalışınca sunucunun compiler kaldırmıyor, güncel data için f5 atın :D </h1> </center> </p>
+
+</body>
+</html>
+
+<script>
+var date1 = new Date(); // current date
+var date2 = new Date("05/14/2023"); // mm/dd/yyyy format
+var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
+var timeDiffInSecond = Math.ceil(timeDiff); // in second
+
+var days = Math.floor(timeDiff / (24*60*60*1000));
+var hours = Math.floor((timeDiff / 60) % 24);
+var minutes = Math.floor((timeDiff / 60) % 60);
+var seconds = Math.floor((timeDiff / 1000) % 60);
+
+var test = days + " Gün, " + hours + " Saat, " + minutes + " Dakika ";
+
+document.getElementById('date-time').innerHTML=test;
+</script>
+
+</body>
+</html>
