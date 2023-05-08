@@ -11,26 +11,82 @@
 <head>
 </head>
 <body>
-<center> <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:42px">Sa beyler seçime kalan süre: <span id='date-time'></span> </h1> </center> </p>
-<center> <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:42px">Siteyi güncellemeye çalışınca sunucunun compiler kaldırmıyor, güncel data için f5 atın :D </h1> </center> </p>
+
+<center> <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:64px">Seçim Sayacı</span> </h1> </center>
+<center> <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:52px"><span id='date-time'></span> </h1> </center>
+
+<ul id="list">
+    <li>
+        <h1      style="font-family:'Minecraft Regular';font-weight:normal;font-size:26px">Seçim Ne Zaman?</span> <em></em></h1>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">2023 Türkiye genel seçimlerinin tarihi, 18 Ocak 2023'te yapılan açıklamayla 14 Mayıs 2023 olarak belirlenmiştir.</span> </h1></p>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">Aynı gün, Türkiye Cumhurbaşkanlığı seçimi de gerçekleştirilecektir.</span> </h1></p>
+    </li>
+    
+    <li>
+        <h3      style="font-family:'Minecraft Regular';font-weight:normal;font-size:26px">2023 Seçimi Cumhurbaşkanı Adayları Kimlerdir?</span> </> <em></em></h3>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">1. Recep Tayyip Erdoğan (Cumhur İttifakı)</span> </h1></p>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">2. Kemal Kılıçdaroğlu (Millet İttifakı)</span> </h1></p>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">3. Muharrem İnce (Memleket Partisi)</span> </h1></p>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">4. Sinan Oğan (ATA İttifakı)</span> </h1></p>
+    </li>
+
+    <li>
+        <h1      style="font-family:'Minecraft Regular';font-weight:normal;font-size:26px">Cumhurbaşkanlığı Seçimi Periyodu Nedir?</span> </> <em></em></h4>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">Türkiye'de Cumhurbaşkanlığı seçimleri her beş yılda bir düzenlenmektedir.</span> </h1></p>
+    </li>
+
+    <li>
+        <h1      style="font-family:'Minecraft Regular';font-weight:normal;font-size:26px">Cumhurbaşkanı En Fazla Kaç Yıl Görevde Kalabilir?</span> </> <em></em></h1>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">Cumhurbaşkanı seçimi kanunu uyarınca, bir Cumhurbaşkanı en fazla iki dönem görev yapabilir.<br>Fakat, ikinci dönemde Meclis tarafından seçimlerin yenilenmesine karar verilir ise mevcut<br>Cumhurbaşkanı bir kez daha aday olabilir.</span> </h1></p>
+    </li>
+
+    <li>
+        <h1      style="font-family:'Minecraft Regular';font-weight:normal;font-size:26px">Cumhurbaşkanı Seçimi için Gerekli Oy Oranı Nedir?</span> </> <em></em></h1>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">Bir adayın Cumhurbaşkanı seçilebilmesi için geçerli oyların salt çoğunluğunu (yüzde 50 + 1 oy) elde etmesi gerekmektedir.</span> </h1></p>
+    </li>
+
+    <li>
+        <h1      style="font-family:'Minecraft Regular';font-weight:normal;font-size:26px">Cumhurbaşkanı Seçimi Süreci Nasıldır?</span> </> <em></em></h1>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">Cumhurbaşkanlığı seçiminin ilk turu bir gün içinde tamamlanır. Eğer adaylardan hiçbiri salt çoğunluğu (yüzde 50 + 1 oy) elde edemezse, birinci turda en yüksek oyu alan iki aday, YSK tarafından belirlenen ileri bir tarihte, bir günlük sürecek ikinci turda tekrar yarışır.</span> </h1></p>
+    </li>
+
+    <li>
+        <h1      style="font-family:'Minecraft Regular';font-weight:normal;font-size:26px">Cumhurbaşkanlığı Süresi Ne Zaman Değiştirildi?</span> </> <em></em></h1>
+        <p>  <h1 style="font-family:'Minecraft Regular';font-weight:normal;font-size:18px">2007 Türkiye anayasa değişikliği referandumu sonrasında, Cumhurbaşkanlığı süresi değiştirilmiştir.<br>Daha önce yedi yıl ve en fazla tek dönem olan süre, referandumun ardından beş yıl ve en fazla<br>iki dönem şeklinde yeniden düzenlenmiştir.</span> </h1></p>
+    </li>
+
+</ul>
+
+<div id="copyright">
+    Copyright 2023 &copy; Berke Akçen
+</div>
 
 </body>
 </html>
 
 <script>
-var date1 = new Date(); // current date
-var date2 = new Date("05/14/2023"); // mm/dd/yyyy format
-var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
-var timeDiffInSecond = Math.ceil(timeDiff); // in second
+document.getElementById('date-time').innerHTML = "Hesaplıyoruz...";
 
-var days = Math.floor(timeDiff / (24*60*60*1000));
-var hours = Math.floor((timeDiff / 60) % 24);
-var minutes = Math.floor((timeDiff / 60) % 60);
-var seconds = Math.floor((timeDiff / 1000) % 60);
+var countDownDate = new Date("May 14, 2023 07:00:00").getTime();
+var x = setInterval(function() {
 
-var test = days + " Gün, " + hours + " Saat, " + minutes + " Dakika ";
+  var now = new Date().getTime();
 
-document.getElementById('date-time').innerHTML=test;
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+   var test = days + " Gün, " + hours + " Saat, " + minutes + " Dakika, " + seconds + " Saniye";
+   document.getElementById('date-time').innerHTML=test;
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById('date-time').innerHTML = "EXPIRED";
+  }
+}, 1000);
 </script>
 
 </body>
