@@ -1,5 +1,5 @@
 var date1 = new Date(); // current date
-var date2 = new Date("05/14/2023"); // mm/dd/yyyy format
+var date2 = new Date("05/28/2023"); // mm/dd/yyyy format
 
 function update() {
     var timeDiff = Math.abs(date2.getTime() - date1.getTime()); // in miliseconds
